@@ -1,0 +1,129 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffeef8;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+  header, section, footer {
+    padding: 60px 0;
+  }
+  footer {
+    background-color: #ffcee2;
+  }
+  .navbar {
+    background-color: #ff69b4;
+  }
+  .navbar-brand, .nav-link {
+    color: #fff !important;
+    font-weight: bold;
+  }
+  .section-title {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #ff1493;
+  }
+  .lead {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #555;
+    font-size: 20px;
+  }
+  .icon {
+    font-size: 50px;
+    color: #ff69b4;
+    margin-bottom: 20px;
+  }
+
+  #apresentacao img {
+    border-radius: 50%;
+  }
+
+  .link-aqui {
+    color: #f577da;
+    text-decoration: none; 
+    transition: all 0.3s ease;
+    font-weight: normal;
+  }
+
+  .link-aqui:hover {
+    color: #d11fc2; 
+    font-weight: bold;
+  }
+
+
+ 
+  .arquitetura-section {
+    background-color: #ffe6f0; 
+  }
+
+  
+  .fade-in-card {
+    background-color: #ffffff;
+    border: 1px solid #f8c8dc; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  
+  .fade-in-card.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  
+  .fade-in-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(248, 200, 220, 0.4);
+  }
+
+  
+  .card-title {
+    color: #d63384; 
+    font-weight: bold;
+  }
+
+  
+  .card-text, .list-unstyled li {
+    color: #6c757d; 
+    font-size: 1rem;
+  }
+
+  #diagrama img{
+    border-radius: 5%;
+    width: 600px;
+    height: 600px;
+    
+}
+
+#simulacao {
+  background-color: #f8f9fa; 
+  padding: 60px 0;
+}
+
+#simulacao h2 {
+  margin-bottom: 20px;
+}
+
+.simulacao-link {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.simulacao-link:hover {
+  text-decoration: underline;
+}
+
+.simulacao-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

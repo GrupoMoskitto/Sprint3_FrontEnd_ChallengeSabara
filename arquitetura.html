@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Arquitetura - Gatinho Sabará</title>
+</head>
+<body>
+   <!-- Navegação -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Moskitto</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      </div>
+    </div>
+  </nav>
+  
+ 
+  <section id="arquitetura" class="py-5 arquitetura-section">
+    <div class="container">
+      <h2 class="text-center mb-5">Arquitetura da Solução</h2>
+      <div class="row g-4">
+  
+        <!-- IoT -->
+        <div class="col-md-4">
+          <div class="card fade-in-card h-100">
+            <div class="card-body text-center">
+              <h5 class="card-title">📡 IoT - Dispositivo Físico</h5>
+              <p class="card-text">Brinquedo em forma de gatinho, equipado com:</p>
+              <ul class="list-unstyled">
+                <li>ESP32-C3</li>
+                <li>Display OLED</li>
+                <li>Requisição HTTP GET a cada 20s</li>
+                <li>Atualização de texto conforme Display001</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Back-End -->
+        <div class="col-md-4">
+          <div class="card fade-in-card h-100">
+            <div class="card-body text-center">
+              <h5 class="card-title">☁️ Back-End - FIWARE</h5>
+              <p class="card-text">Servidor Orion Context Broker hospedado no Azure:</p>
+              <ul class="list-unstyled">
+                <li>Porta 1026</li>
+                <li>Entidade Display001</li>
+                <li>Interface REST API via NGSIv2</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Aplicação -->
+        <div class="col-md-4">
+          <div class="card fade-in-card h-100">
+            <div class="card-body text-center">
+              <h5 class="card-title">💻 Aplicação</h5>
+              <p class="card-text">Painel Web ou Postman para envio de atualizações:</p>
+              <ul class="list-unstyled">
+                <li>Comunicação HTTP na porta 1026</li>
+                <li>Uso de cabeçalhos Fiware-Service e Fiware-ServicePath</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+
+  <section id="diagrama" class="py-5 arquitetura-section">
+    <div class="container">
+      <h2 class="text-center mb-5">Diagrama da Arquitetura</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8 text-center">
+          <img src="img/arq.png" alt="Diagrama da Arquitetura" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section id="simulacao" class="py-5 arquitetura-section">
+    <div class="container text-center">
+      <h2 class="mb-4">Simulação</h2>
+      <p>
+        <a href="https://wokwi.com/projects/SEU-LINK-AQUI" target="_blank" class="simulacao-link">Link</a> para a Simulação no Wokwi
+      </p>
+      <div class="mt-4">
+        <img src="https://github.com/GrupoMoskitto/Edge-Sprint-3-Moskitto/raw/main/wokwi-simula%C3%A7%C3%A3o.png" alt="Simulação Wokwi" class="img-fluid simulacao-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- JavaScript para a animação aparecer ao rolar -->
+<script>
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    });
+  
+    document.querySelectorAll('.fade-in-card').forEach(card => {
+      observer.observe(card);
+    });
+  </script>
+  
+  <!-- Rodapé -->
+<footer class="footer py-4">
+  <div class="container text-center">
+    <p class="mb-0">© 2025 Moskitto - Todos os direitos reservados.</p>
+  </div>
+</footer>
+  
+</body>
+</html>
