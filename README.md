@@ -15,3 +15,4 @@ Challenge - Hospital Infantil Sabará
 ## Tecnologias Utilizadas:
 - HTML5
 - Bootstrap CSS (framework de estilização)
+- JavaScript
