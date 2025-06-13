@@ -12,25 +12,45 @@
     <title>Gatinho Sabará</title>
 </head>
 <body>
-   <!-- Navegação -->
-<nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">Moskitto</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#apresentacao">Projeto</a></li>
-          <li class="nav-item"><a class="nav-link" href="#problema">Problema</a></li>
-          <li class="nav-item"><a class="nav-link" href="#solucao">Solução</a></li>
-          <li class="nav-item"><a class="nav-link" href="#perfis">Perfis</a></li>
-          <li class="nav-item"><a class="nav-link" href="#impacto">Impacto</a></li>
-          <li class="nav-item"><a class="nav-link" href="arquitetura.html">Arquitetura</a></li>
-        </ul>
+<nav class="sticky top-0 z-50 bg-pink-200 shadow-md">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      
+      <!-- Logo -->
+      <a href="#" class="text-pink-600 font-bold text-xl flex items-center gap-2">
+         <span>Moskitto</span>
+      </a>
+
+      <!-- Botão do menu mobile -->
+      <div class="md:hidden">
+        <button id="menu-btn" class="text-pink-600 text-2xl focus:outline-none">
+          <i class="fas fa-bars"></i>
+        </button>
       </div>
+
+      <!-- Links - Desktop -->
+      <ul class="hidden md:flex space-x-6 text-pink-700 font-medium">
+        <li><a href="#apresentacao" class="hover:text-pink-900 transition">Projeto</a></li>
+        <li><a href="#problema" class="hover:text-pink-900 transition">Problema</a></li>
+        <li><a href="#solucao" class="hover:text-pink-900 transition">Solução</a></li>
+        <li><a href="#perfis" class="hover:text-pink-900 transition">Perfis</a></li>
+        <li><a href="#impacto" class="hover:text-pink-900 transition">Impacto</a></li>
+        <li><a href="arquitetura.html" class="hover:text-pink-900 transition">Arquitetura</a></li>
+      </ul>
     </div>
-  </nav>
+
+    <!-- Links - Mobile -->
+    <div id="mobile-menu" class="hidden md:hidden mt-2 space-y-2 text-pink-700 font-medium">
+      <a href="#apresentacao" class="block">Projeto</a>
+      <a href="#problema" class="block">Problema</a>
+      <a href="#solucao" class="block">Solução</a>
+      <a href="#perfis" class="block">Perfis</a>
+      <a href="#impacto" class="block">Impacto</a>
+      <a href="arquitetura.html" class="block">Arquitetura</a>
+    </div>
+  </div>
+</nav>
+
   
   <!-- Apresentacao -->
   <section id="apresentacao" class="text-center">
