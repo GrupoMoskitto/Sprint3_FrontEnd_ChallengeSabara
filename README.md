@@ -1,6 +1,4 @@
-# Projeto Gatinho Sabará
-
-Sprint 4 de Front-End do Challenge Hospital Sabará.
+## Sprint 4 de Front-End do Challenge Hospital Sabará.
 
 ## Conteúdo
 
