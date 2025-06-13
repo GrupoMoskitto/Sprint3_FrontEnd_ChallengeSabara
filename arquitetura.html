@@ -15,19 +15,42 @@
     <title>Arquitetura - Gatinho Sabará</title>
 </head>
 <body>
-   <!-- Navegação -->
-<nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">Moskitto</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-      </div>
-    </div>
-  </nav>
+<!-- Navbar Gatinho Sabará -->
+<nav class="bg-pink-500 text-white">
+  <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+    <a href="index.html" class="text-2xl font-bold hover:text-pink-100 transition">Moskitto</a>
+    <button id="menu-btn" class="md:hidden text-2xl focus:outline-none">
+      <i class="fas fa-bars"></i>
+    </button>
+    <ul id="menu" class="hidden md:flex gap-6 font-medium">
+      <li><a href="index.html#problema" class="hover:underline">Problema</a></li>
+      <li><a href="index.html#solucao" class="hover:underline">Solução</a></li>
+      <li><a href="index.html#impacto" class="hover:underline">Impacto</a></li>
+      <li><a href="index.html#perfis" class="hover:underline">Perfis</a></li>
+    </ul>
+  </div>
+
+  <!-- Menu mobile -->
+  <div id="mobile-menu" class="md:hidden px-4 pb-4 hidden">
+    <ul class="flex flex-col gap-2">
+      <li><a href="index.html#problema" class="block py-2 hover:underline">Problema</a></li>
+      <li><a href="index.html#solucao" class="block py-2 hover:underline">Solução</a></li>
+      <li><a href="index.html#impacto" class="block py-2 hover:underline">Impacto</a></li>
+      <li><a href="index.html#perfis" class="block py-2 hover:underline">Perfis</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Script para abrir/fechar menu mobile -->
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
   
  
   <section id="arquitetura" class="py-5 arquitetura-section">
