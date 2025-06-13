@@ -1,6 +1,6 @@
 ## Sprint 4 de Front-End do Challenge Hospital Sabará.
 
-#Membros do Grupo
+# Membros do Grupo
 Ana Luiza - RM561194
 Gabriel Couto - RM559579
 Gabriel Kato - RM560000
